@@ -41,6 +41,10 @@ function App() {
       }
     }
 
+    const refresh = () => {
+      window.location.reload()
+    }
+
     if (error.error){
       return <h1>{error.message}</h1>
     }
@@ -48,6 +52,7 @@ function App() {
       <div>
         <h1>Lyric Finder</h1>
         <Input artist={artist} song={song} changeHandler1={changeHandler1} changeHandler2={changeHandler2} getter={getter} loading={loading} lyrics={lyrics} enter={enter}/> 
+        <button onClick={refresh}>Refresh</button>
       </div>
     )
   }
