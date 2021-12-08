@@ -56,8 +56,6 @@ function App() {
     return (
       <div>
         <h1>Lyric Finder</h1>
-        <p>new line for testing</p>
-        <p>another test line</p>
         <Input artist={artist} song={song} changeHandler1={changeHandler1} changeHandler2={changeHandler2} getter={getter} loading={loading} lyrics={lyrics} enter={enter}/> 
         <button onClick={refresh}>Refresh</button>
       </div>
