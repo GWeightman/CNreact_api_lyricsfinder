@@ -46,7 +46,12 @@ function App() {
     }
 
     if (error.error){
-      return <h1>{error.message}</h1>
+      return (
+        <div>
+        <h1>{error.message}</h1>
+        <button onClick={refresh}>Refresh</button>
+        </div>
+      )
     }
     return (
       <div>
